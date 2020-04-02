@@ -1,0 +1,1 @@
+FQDN_APP = ENV["FQDN_APP"]

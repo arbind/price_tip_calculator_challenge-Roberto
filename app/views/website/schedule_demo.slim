@@ -1,0 +1,18 @@
+-provide :header_class, "transparent"
+
+coffee:
+  driftBotIFrameStyle = "width: 94% !important; height: 88%   !important; top: 10%; left: 3%; right: 3%; bottom: 2%; border: medium none; display: block; position: fixed; visibility: visible; z-index: 2147483647; transition: none 0s ease 0s; background: transparent none repeat scroll 0% 0%; opacity: 1;"
+  $ ->
+    drift.on 'ready', (api)->
+
+      showFullPageDriftBot = ->
+        $driftWidget = $('.drift-widget-sidebar')
+        $driftWidget.attr("style", driftBotIFrameStyle)
+
+
+      reOpenDriftBot = ->
+        api.sidebar.open()
+        setTimeout showFullPageDriftBot, 200
+
+      drift.on 'sidebarClose', reOpenDriftBot
+      drift.on 'sidebarOpen', (e)-> setTimeout showFullPageDriftBot, 200

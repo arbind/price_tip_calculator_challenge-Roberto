@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>shapePattern_square</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <pattern id="pattern-1" width="7.99999952" height="7.99999952" x="-7.99999952" y="-7.99999952" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-2" transform="scale(0.199999988,0.199999988)"></use>
+        </pattern>
+        <image id="image-2" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGN5fIAKQAAAXpJREFUWAntljFqAkEYhf8VQSLYBKKNoIUp0gRPoUfJFcQDSK7gUfQUYmNhigRskkAaQRECyTxhwWJI3psZYYt5jbLsvPnm7cz8f/HjZBVWrcJsZ7QMGPuFcoI5wdgEYsfnPRibYD3G4NsVoeXnzpYfO1vvv+z9dDzbdRo39ti6tVG7a6O7rtWLIniaIrTULRzYbLuyt8P+z8l7zZZN74c2dqAhkgFRuJ9fVjZ/3UjzPfUfbDIYmpqlfEhC4LASLAhjVUmA+KxqcpdAGAsPRTQgDgT2XKzgAS9WNCBO638HgpkUHvBixQO6qySVcC2xogFxz6WS4kUDlpdwCkjFiwZMARbiQQOifKWS4kUDoramkuJFA6Lwp5LixQO6Yo/CHyt4oMNhRQOiZUJXEit4KO0XDQgwtEzoSkKFsWrbJQECDC1TCGTZbqmLk/vBcoLKNqwlIH4r3fJfgl7zv7wHrwnj886AvlSUZzlBJS3fuzlBXyrKs5ygkpbv3V/XkpE1zXwlLAAAAABJRU5ErkJggg=="></image>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.3">
+        <rect id="shapePattern_square" fill="url(#pattern-1)" fill-rule="nonzero" x="0" y="0" width="200" height="200"></rect>
+    </g>
+</svg>

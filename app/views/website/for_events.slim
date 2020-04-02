@@ -1,0 +1,463 @@
+- content_for :title
+  | List An Event - RECESS
+
+- content_for :desc
+  | RECESS is the easiest way to publish your events for free where Sponsors can discover your events and submit their offers allowing you to make money and enhance your event all at once.
+
+header.hero-image.event.masthead.text-center.text-white.d-flex
+  .container.my-auto
+    .row
+      .col-lg-12.mx-auto.pt-5
+        h1.pb-3 Making money and getting interactive experiences from sponsors has never been so easy
+      .col-lg-12.mx-auto
+            =link_to "Sign up my event", "https://#{FQDN_APP}/register", class: "btn btn-primary btn-xl js-scroll-trigger"
+            p.join-wait-list.mt-3.mb-0
+              | Not a college event? 
+              a href="https://teamrecess.typeform.com/to/lazIWq" Join our waiting list
+              | .
+
+section#how-it-works
+  .container
+    .row
+      .col-lg-12.text-center
+        h2.section-heading How it works
+
+  .container
+    .row
+      .col-sm-7.shape-pattern-container
+        .shape-pattern-square
+        .step-img.d-flex.justify-content-center.align-items-center = image_tag "website/icons/step1.png", width: 500, class: "mx-auto img-fluid"
+      .col-sm-5.d-flex.align-items-center
+        .how-we-help-step
+          h3.pt-3.pt-sm-0 Step 1
+          p Create an account and publish your events for free
+
+  .container
+    .row
+      .col-sm-5.d-flex.align-items-center.order-2.order-sm-1
+        .how-we-help-step
+          h3.pt-3.pt-sm-0 Step 2
+          p
+            | Sponsors discover 
+            b your events 
+            | and submit their offers
+      .col-sm-7.shape-pattern-container.order-1.order-sm-2
+        .shape-pattern-circle
+        .step-img.d-flex.justify-content-center.align-items-center = image_tag "website/icons/step2.png", width: 500, class: "mx-auto img-fluid"
+
+  .container
+    .row
+      .col-sm-7.shape-pattern-container
+        .shape-pattern-square
+        .step-img.d-flex.justify-content-center.align-items-center = image_tag "website/icons/step3.png", width: 500, class: "mx-auto img-fluid"
+      .col-sm-5.d-flex.align-items-center
+        .how-we-help-step
+          h3.pt-3.pt-sm-0 Step 3
+          p Review your offers and Accept or Reject them in our platform
+
+  .container
+    .row
+      .col-sm-5.d-flex.align-items-center.order-2.order-sm-1
+        .how-we-help-step
+          h3.pt-3.pt-sm-0 Step 4
+          p Make money and enhance your event all at once
+      .col-sm-7.shape-pattern-container.order-1.order-sm-2
+        .shape-pattern-circle
+        .step-img.d-flex.justify-content-center.align-items-center = image_tag "website/icons/step4.png", width: 500, class: "mx-auto img-fluid"
+
+
+
+section#search-for-events.bg-secondary
+  .container
+    .row
+      .col-lg-9.text-center
+        h2.section-heading.text-white.mt-4.mb-4  Want to learn how you can start getting sponsors?
+      .col-lg-3.mx-auto.text-center
+        =link_to  "Book A Demo", "https://calendly.com/recessdustin/30min", class: "btn btn-inverse btn-xl my-4"
+
+/ section#how-it-works
+/   .container
+/     .row
+/       .col-lg-12.text-center
+/         h1.section-heading How it works
+/   .container
+/       .row
+/         .col-sm-3.text-center
+/           .card.how-it-works.shadow.mt-5.pt-5.mx-auto
+/             .card-body
+/               .step-icon= image_tag 'website/icons/step-1.png'
+/               h3.mb-3 Step 1
+/               p.text-muted.mb-0 Create an account and publish your events for free
+/         .col-sm-3.text-center
+/           .card.how-it-works.shadow.mt-5.pt-5.mx-auto
+/             .card-body
+/               .step-icon= image_tag 'website/icons/step-2.png'
+/               h3.mb-3 Step 2
+/               p.text-muted.mb-0
+/                 | Sponsors discover
+/                 br
+/                   b your events
+/                 | and submit their offers
+/         .col-sm-3.text-center
+/           .card.how-it-works.shadow.mt-5.pt-5.mx-auto
+/             .card-body
+/               .step-icon= image_tag 'website/icons/step-3.png'
+/               h3.mb-3 Step 3
+/               p.text-muted.mb-0 Review your offers and Accept or Reject them in our platform
+/         .col-sm-3.text-center
+/           .card.how-it-works.shadow.mt-5.pt-5.mx-auto
+/             .card-body
+/               .step-icon= image_tag 'website/icons/step-4.png'
+/               h3.mb-3 Step 4
+/               p.text-muted.mb-0 Get ready for an event funded by exciting, experiential marketing
+
+section#featured-events
+  .container
+    .row
+      .col-lg-12.text-center
+        h2.section-heading Featured Opportunities
+  .container
+    .row
+      .col-md-4
+        a href="/opportunities/5_hour_energy/apply"
+          .card.shadow.mt-5.mx-auto
+            .card-body.event
+              .event-image.d-flex.justify-content-center.align-items-center
+                / .event-type Opportunity Type
+                .event-image-cover.d-flex.align-items-center.justify-content-center Learn More
+                =image_tag "website/opportunities/5_hour_energy/5hourenergy.png"
+              .event-description
+                .event-name 5-Hour Energy
+                .event-details
+                  span.university-name Apply for 5-Hour Energy Sponsorship
+
+      .col-md-4
+        a href="/opportunities/guayaki/yerba_mate"
+          .card.shadow.mt-5.mx-auto
+            .card-body.event
+              .event-image.d-flex.justify-content-center.align-items-center
+                / .event-type Opportunity Type
+                .event-image-cover.d-flex.align-items-center.justify-content-center Learn More
+                =image_tag "website/opportunities/guayaki/GuayakiYerbaMate.png"
+              .event-description
+                .event-name Guayaki: Yerba Mate
+                .event-details
+                  span.university-name Apply for Guyaki Sponsorship
+
+      .col-md-4
+        a href="/opportunities/redbull/wings_team"
+          .card.shadow.mt-5.mx-auto
+            .card-body.event
+              .event-image.d-flex.justify-content-center.align-items-center
+                / .event-type Opportunity Type
+                .event-image-cover.d-flex.align-items-center.justify-content-center Learn More
+                =image_tag "website/opportunities/redbull/Redbull.png"
+              .event-description
+                .event-name RED BULL
+                .event-details
+                  span.university-name Apply for Red Bull Sponsorship
+
+section#examples
+  .container
+    .row
+      .col-lg-10.mx-auto.text-center
+        h2.section-heading Sponsor Highlights
+  .container
+    .sponsor-high-slider.mt-5
+      .sponsor-high-item
+        .card.example.shadow
+          .card-body.p-0
+            .row.m-0
+              .col-lg-8.p-0.text-center
+                =image_tag "website/alienware/image@3x.png", width: "100%"
+              .col-lg-4.p-0
+                .card.mx-auto.bg-transparent.border-0
+                  .card-body.sponsor.text-sm-center.text-lg-left
+                    .img-thumbnail.border-0 =image_tag "website/alienware/logo@3x.png", height: "100px"
+                    h3.mt-4.mb-3.event-name Alienware - Live Stream Gaming Trailer
+                    p.mb-0.event-description A decked-out trailer was rolled in with new releases, unpublished titles, and amazing virtual reality experiences -- supported with a ton of swag.
+
+      .sponsor-high-item
+        .card.example.shadow
+          .card-body.p-0
+            .row.m-0
+              .col-lg-8.p-0.text-center
+                =image_tag "website/lyft/image@3x.png", width: "100%"
+              .col-lg-4.p-0
+                .card.mx-auto.bg-transparent.border-0
+                  .card-body.sponsor.text-sm-center.text-lg-left
+                    .img-thumbnail.border-0 =image_tag "website/lyft/logo-lyft-pink@3x.jpg", height: "100px"
+                    h3.mt-4.mb-3.event-name Lyft - Event Rideshare Partner
+                    p.mb-0.event-description Attendees were hooked up with with free ride credits, giveaways, and an easy-to-find pick up / drop off location at events.
+      .sponsor-high-item
+        .card.example.shadow
+          .card-body.p-0
+            .row.m-0
+              .col-lg-8.p-0.text-center
+                =image_tag "website/brewdr/image@3x.png", width: "100%"
+              .col-lg-4.p-0
+                .card.mx-auto.bg-transparent.border-0
+                  .card-body.sponsor.text-sm-center.text-lg-left
+                    .img-thumbnail.border-0 =image_tag "website/brewdr/logo@3x.png", height: "100px"
+                    h3.mt-4.mb-3.event-name Brew Dr Kombucha - Samples + Social
+                    p.mb-0.event-description Free organic Kombucha samples were flowing, alongside fun games and Instagrammable photo moments to share.
+      .sponsor-high-item
+        .card.example.shadow
+          .card-body.p-0
+            .row.m-0
+              .col-lg-8.p-0.text-center
+                =image_tag "website/vineyardvines/image@2x.png", width: "100%"
+              .col-lg-4.p-0
+                .card.mx-auto.bg-transparent.border-0
+                  .card-body.sponsor.text-sm-center.text-lg-left
+                    .img-thumbnail.border-0 =image_tag "website/vineyardvines/logo@3x.png", height: "100px"
+                    h3.mt-4.mb-3.event-name Vineyard Vines - Mobile Game + More
+                    p.mb-0.event-description Visitors won gift cards and discounts from a “Spin The Whale” mobile game, and then grabbed some free swag and a photo with VV’s iconic mascot.
+      .sponsor-high-item
+        .card.example.shadow
+          .card-body.p-0
+            .row.m-0
+              .col-lg-8.p-0.text-center
+                =image_tag "website/mtvu/image@3x.png", width: "100%"
+              .col-lg-4.p-0
+                .card.mx-auto.bg-transparent.border-0
+                  .card-body.sponsor.text-sm-center.text-lg-left
+                    .img-thumbnail.border-0 =image_tag "website/mtvu/logo@3x.png", height: "100px"
+                    h3.mt-4.mb-3.event-name MTVU x Icebreakers - Photo Booth
+                    p.mb-0.event-description Groups of friends captured and shared their favorite moments in a branded photo booth -- while freshening up with free Icebreaker samples.
+      .sponsor-high-item
+        .card.example.shadow
+          .card-body.p-0
+            .row.m-0
+              .col-lg-8.p-0.text-center
+                =image_tag "website/youtube/image@3x.png", width: "100%"
+              .col-lg-4.p-0
+                .card.mx-auto.bg-transparent.border-0
+                  .card-body.sponsor.text-sm-center.text-lg-left
+                    .img-thumbnail.border-0 =image_tag "website/youtube/logo@3x.png", height: "60px"
+                    h3.mt-4.mb-3.event-name YouTube - Screening Competition + LA Networking Trip
+                    p.mb-0.event-description YouTube made a splash with screenings of its original series, Impulse, with an incredible competition to win an all-expenses paid networking trip to LA (plus tons of Google product giveaways).
+      .sponsor-high-item
+        .card.example.shadow
+          .card-body.p-0
+            .row.m-0
+              .col-lg-8.p-0.text-center
+                =image_tag "website/disasterartist/image@3x.png", width: "100%"
+              .col-lg-4.p-0
+                .card.mx-auto.bg-transparent.border-0
+                  .card-body.sponsor.text-sm-center.text-lg-left
+                    .img-thumbnail.border-0 =image_tag "website/a24/logo@3x.png", height: "100px"
+                    h3.mt-4.mb-3.event-name A24 - The Disaster Artist - Screening Competition + Red Carpet Premiere
+                    p.mb-0.event-description The studio headed to campus with a competition to win an exclusive advance screening -- plus a chance to attend the Hollywood red carpet film premiere.
+      .sponsor-high-item
+        .card.example.shadow
+          .card-body.p-0
+            .row.m-0
+              .col-lg-8.p-0.text-center
+                =image_tag "website/sponsor_highlights/FollowYourHeart_4.jpg", width: "100%"
+              .col-lg-4.p-0
+                .card.mx-auto.bg-transparent.border-0
+                  .card-body.sponsor.text-sm-center.text-lg-left
+                    .img-thumbnail.border-0 =image_tag "website/sponsor_highlights/FollowYourHeart_400x400.jpg", height: "100px"
+                    h3.mt-4.mb-3.event-name Follow Your Heart - Plant Based Food Samples
+                    p.mb-0.event-description Attendees didn’t go hungry, they indulged in a variety of healthy plant-based and dairy free foods manufactured from a zero-waste facility 
+      .sponsor-high-item
+        .card.example.shadow
+          .card-body.p-0
+            .row.m-0
+              .col-lg-8.p-0.text-center
+                =image_tag "website/sponsor_highlights/Chameleon-Cold-Brew-NY.jpg", width: "100%"
+              .col-lg-4.p-0
+                .card.mx-auto.bg-transparent.border-0
+                  .card-body.sponsor.text-sm-center.text-lg-left
+                    .img-thumbnail.border-0 =image_tag "website/sponsor_highlights/Chameleon-Cold.png", height: "100px"
+                    h3.mt-4.mb-3.event-name Chameleon Cold Brew Coffee - Free Cold Brew
+                    p.mb-0.event-description The cold brew coffee flowed helping keeping attendees from going thirsty and keeping them perked up with lots of giveaways
+      .sponsor-high-item
+        .card.example.shadow
+          .card-body.p-0
+            .row.m-0
+              .col-lg-8.p-0.text-center
+                =image_tag "website/sponsor_highlights/Resized_20190329_201018_1904.jpg", width: "100%"
+              .col-lg-4.p-0
+                .card.mx-auto.bg-transparent.border-0
+                  .card-body.sponsor.text-sm-center.text-lg-left
+                    .img-thumbnail.border-0 =image_tag "website/sponsor_highlights/logo_909x.png", height: "100px"
+                    h3.mt-4.mb-3.event-name Mikey’s - Free Hot Pockets
+                    p.mb-0.event-description No one went hungry when Mikey’s rolled up handing out tons of free gluten-free, non-GMO pizza hot pockets
+      .sponsor-high-item
+        .card.example.shadow
+          .card-body.p-0
+            .row.m-0
+              .col-lg-8.p-0.text-center
+                =image_tag "website/sponsor_highlights/ArizonaState-Sambozan.jpg", width: "100%"
+              .col-lg-4.p-0
+                .card.mx-auto.bg-transparent.border-0
+                  .card-body.sponsor.text-sm-center.text-lg-left
+                    .img-thumbnail.border-0 =image_tag "website/sponsor_highlights/SambazonAcaiCafe_2031_Cardiff_by_the_Sea_CA.png", height: "100px"
+                    h3.mt-4.mb-3.event-name Sambozan - Free Acai Bowls
+                    p.mb-0.event-description Attendees enjoyed hand-crafted organic ethically sourced, fair trade superfoods like free smoothies and Acai bowls on a hot summer day
+
+section#value.bg-secondary
+  .container
+    .row
+      .col-lg-10.mx-auto.text-center
+        h2.section-heading.text-white Our Value
+  .container
+    .row
+      .col-md-4.text-center
+        .card.mt-5.mx-auto.bg-transparent.border-0
+          .card-body.text-white
+            .step-icon= image_tag "website/icons/money@3x.png", width: 160
+            h3.mt-4.mb-3 Make Money
+            p.mb-0 Our trusted brands help generate revenue to offset expenses.
+
+
+      .col-md-4.text-center
+        .card.mt-5.mx-auto.bg-transparent.border-0
+          .card-body.text-white
+            .step-icon= image_tag "website/icons/bullhorn@3x.png", width: 160
+            h3.mt-4.mb-3 Engage Your Audience
+            p.mb-0 Interactive marketing experiences supply additional event entertainment.
+
+
+      .col-md-4.text-center
+        .card.mt-5.mx-auto.bg-transparent.border-0
+          .card-body.text-white
+            .step-icon= image_tag "website/icons/desktop@3x.png", width: 160
+            h3.mt-4.mb-3 Stay Focused
+            p.mb-0 We deliver top sponsors, so you can deliver a great event.
+
+section#reviews
+  .container
+    .row
+      .col-lg-10.mx-auto.text-center
+        h2.section-heading University Testimonials
+  .container
+    .testimonial-slider
+      .testimonial-item.text-center
+        .card.mt-5.mx-auto.bg-transparent.border-0
+          .card-body
+            =image_tag "website/recess_website_logos/schools/logo_penn@2x.png", width: 160, class: 'mx-auto'
+            h5.mb-3 “Working with Recess was a great way to help bring big name brands to our show.”
+            p
+              i.mb-0 - Alexandra Franklin, Movin’ On Director of Sponsorship
+            p
+              strong The Pennsylvania State University
+
+
+      .testimonial-item.text-center
+        .card.mt-5.mx-auto.bg-transparent.border-0
+          .card-body
+            =image_tag "website/recess_website_logos/schools/logo_cincinnati@2x.png", width: 160, class: 'mx-auto'
+            h5.mb-3 “It was great working with Recess, they continuously communicated what was expected of both the sponsor and of the University. Once everything was finalized it was smooth sailing from there.”
+            p
+              i.mb-0 - Monica Ruscher, Program Coordinator
+            p
+              strong University of Cincinnati
+
+
+      .testimonial-item.text-center
+        .card.mt-5.mx-auto.bg-transparent.border-0
+          .card-body
+            =image_tag "website/recess_website_logos/schools/logo_minnesota@2x.png", width: 160, class: 'mx-auto'
+            h5.mb-3 “Working with Recess was great! They had great opportunities for our school and made the entire process easy!”
+            p
+              i.mb-0 - Leila Aboujouda, Student Unions & Activities Program Coordinator
+            p
+              strong University of Minnesota
+
+      .testimonial-item.text-center
+        .card.mt-5.mx-auto.bg-transparent.border-0
+          .card-body
+            =image_tag "website/recess_website_logos/schools/logo_ucsd@2x.png", width: 160, class: 'mx-auto'
+            h5.mb-3 “Recess and Alienware did great! They provided a fun, engaging environment with high energy for all students to enjoy.”
+            p
+              i.mb-0 - Jessica Tawn, Associated Students Concerts & Events
+            p
+              strong UC San Diego
+
+      .testimonial-item.text-center
+        .card.mt-5.mx-auto.bg-transparent.border-0
+          .card-body
+            =image_tag "website/recess_website_logos/schools/logo_nyu@2x.png", width: 160, class: 'mx-auto'
+            h5.mb-3 “From their incredibly helpful, professional, and hardworking staff to the amazing sponsors and gear they were able to hook us up with, Recess added so much value to the New York Dance Marathon this year at NYU.”
+            p
+              i.mb-0 - Kathryn Foley, Corporate Relations Chair
+            p
+              strong New York University
+
+      .testimonial-item.text-center
+        .card.mt-5.mx-auto.bg-transparent.border-0
+          .card-body
+            =image_tag "website/recess_website_logos/schools/logo_vanderbilt@2x.png", width: 160, class: 'mx-auto'
+            h5.mb-3 “Working with Recess was great! Very easy to work with and they were very communicative with their needs so that there would be no surprises day of show.  The students also enjoyed the interaction with the vendor.”
+            p
+              i.mb-0 - Dwayne Elliott, Director Arts & Campus Events
+            p
+              strong Vanderbilt University
+
+section#faq
+  .container
+    .row
+      .col-lg-10.mx-auto.text-center
+        h2.section-heading FAQ
+    #accordion
+      .card.py-3
+        .card-header#headingOne
+          h5.mb-0
+            button.btn.btn-link data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+              | Does it cost money to sign up?
+
+        #collapseOne.collapse.show aria-labelledby="headingOne" data-parent="#accordion"
+          .card-body
+            | No, Recess doesn’t charge Universities a fee to list their events.
+      .card.py-3
+        .card-header#headingTwo
+          h5.mb-0
+            button.btn.btn-link.collapsed data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+              | How do brands discover my event?
+        #collapseTwo.collapse aria-labelledby="headingTwo" data-parent="#accordion"
+          .card-body
+            | After you upload your event information, brands then have the opportunity to search events. Brands will then select the events that are the best fit for them and send a sponsorship offer for you to review and choose to accept or deny.
+      .card.py-3
+        .card-header#headingThree
+          h5.mb-0
+            button.btn.btn-link.collapsed data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+              | How will we know if we get a sponsorship offer?
+        #collapseThree.collapse aria-labelledby="headingThree" data-parent="#accordion"
+          .card-body
+            | If you receive an offer, you will receive a notification on your Recess account, as well as an email notification.
+      .card.py-3
+        .card-header#headingFour
+          h5.mb-0
+            button.btn.btn-link.collapsed data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+              | How long does it take to receive offers once we upload our event information?
+        #collapseFour.collapse aria-labelledby="headingFour" data-parent="#accordion"
+          .card-body
+            | After you have uploaded your event, it generally takes 4 weeks until you start to receive sponsorship opportunities.
+      .card.py-3
+        .card-header#headingFive
+          h5.mb-0
+            button.btn.btn-link.collapsed data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
+              | If we use Recess, are we allowed to onboard additional non-Recess affiliated sponsors for our event(s)?
+        #collapseFive.collapse aria-labelledby="headingFive" data-parent="#accordion"
+          .card-body
+            | Absolutely! By becoming a Recess partner you are under no obligation to have your sponsorships provided exclusively through Recess. In fact, if you are able to introduce us to another Brand or University that we are not currently with and we are able to onboard them, we will PAY YOU a REFERRAL FEE!
+      .card.py-3
+        .card-header#headingSix
+          h5.mb-0
+            button.btn.btn-link.collapsed data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"
+              | What kind of sponsorships do you bring to University Events?
+        #collapseSix.collapse aria-labelledby="headingSix" data-parent="#accordion"
+          .card-body
+            | From Alienware’s mobile gaming truck that allows students to live stream themselves playing unreleased games, to a 3D Photo Booth, Free Food Trucks, and much more - the options are endless! We strive to bring sponsorship opportunities that not only help financially, but also enhance your event by providing additional activities, items, and experiences for your attendees to enjoy!
+
+section#cta-search-events
+  .container.text-center.cta-search-text
+    h2.mb-5
+      | Start getting 
+      strong sponsors 
+      | today
+    p
+      =link_to "Publish Your Event", "https://#{FQDN_APP}/login", class: "btn btn-primary btn-xl js-scroll-trigger"

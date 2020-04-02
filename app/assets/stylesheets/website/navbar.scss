@@ -1,0 +1,143 @@
+@import "../themes/creative/variables.scss";
+
+body {
+  #mainNav.navbar, #mainNav.navbar.navbar-shrink {
+    .navbar-nav > li.nav-item > a.nav-link {
+      text-transform: none;
+      font-weight: 600;
+      &:active, &:focus {
+        text-transform: none;
+      }
+    }
+    .navbar-nav > ul {
+      background: white;
+    }
+    .navbar-nav > li.nav-item > a.nav-link {
+      &.btn {
+        padding: 0.3rem 1rem;
+        margin: 0.2rem 0;
+        &.signup {
+          max-width: 6.4em;
+        }
+        &.btn-primary {
+          color: #ffffff;
+          &:hover, &:active, &:focus {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+#mainNav .navbar-brand {
+  color: $text-color;
+  text-transform: none;
+  &:hover, &:active {
+    color: $orange;
+  }
+  .blog-title {
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+nav .navbar-brand .logo-recess {
+  float: left;
+  width: 100px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: asset-url('website/logo/logo.png');
+}
+
+body {
+  #mainNav {
+    min-height: 5rem;
+    border-bottom: 1px solid fade-out($text-color, .9);
+    background-color: $white;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    .navbar-brand .logo-recess {
+      float: left;
+      width: 150px;
+      height: 30px;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+    .navbar-nav > li.nav-item > a.nav-link,
+    .navbar-nav > li.nav-item > a.nav-link:focus {
+      color: $text-color;
+      &:hover {
+        color: $dark-grey;
+      }
+    }
+    &.navbar-shrink {
+      min-height: 3.42rem;
+      .navbar-brand {
+        color: $text-color;
+        &:hover, &:active {
+          color: $dark-grey
+        }
+        .logo-recess {
+          width: 100px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+body.home {
+  #mainNav.navbar {
+    padding-right: 36px;
+    .navbar-brand .logo-recess {
+      background-image: asset-url('website/logo/logo.png');
+    }
+    .navbar-nav > li.nav-item > a.nav-link,
+    .navbar-nav > li.nav-item > a.nav-link:active,
+    .navbar-nav > li.nav-item > a.nav-link:focus {
+      color: $text-color;
+      &:hover {
+        color: $dark-grey;
+      }
+    }
+    @media (min-width: 992px) {
+      border-color: transparent;
+      background-color: transparent;
+      .navbar-brand .logo-recess {
+        background-image: asset-url('website/logo/logo-white.png');
+      }
+      .navbar-nav > li.nav-item > a.nav-link{
+        color: #ffffff;
+        &:hover {
+          color: $medium-grey;
+        }
+      }
+      .navbar-nav > li.nav-item > a.nav-link:focus {
+        color: $text-color;
+        &:hover {
+          color: $dark-grey;
+        }
+      }
+    }
+  }
+
+  #mainNav.navbar.navbar-shrink {
+    border-bottom: 1px solid fade-out($text-color, .9);
+    background-color: $white;
+    .navbar-brand .logo-recess {
+      background-image: asset-url('website/logo/logo.png');
+    }
+    .navbar-nav > li.nav-item > a.nav-link,
+    .navbar-nav > li.nav-item > a.nav-link:focus {
+      color: $text-color;
+      &:hover {
+        color: $dark-grey;
+      }
+    }
+  }
+}

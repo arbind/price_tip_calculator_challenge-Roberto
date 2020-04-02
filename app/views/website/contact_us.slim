@@ -1,0 +1,46 @@
+- content_for :title
+  | Contact - RECESS
+
+- content_for :desc
+  | Contact RECESS to get in touch or learn more, we'd love to hear from you!
+
+- content_for :script
+
+
+  / meta http-equiv="Content-Security-Policy" content="script-src 'unsafe-eval' 'unsafe-inline' 'self' https://*.driftt.com https://*.hotjar.com https://*.hsforms.net https://*.hs-scripts.com https://js.hscollectedforms.net https://js.hsadspixel.net https://js.hs-analytics.net"
+
+header.hero-image.contact.masthead.text-center.text-white.d-flex
+section.contact.bg-secondary
+  .container
+    .row
+      .col-lg-10.mx-auto.text-center
+        h1.section-heading.text-white Get In Touch
+    .row
+      .col-lg-8.mx-auto.text-center
+        h5.font-weight-500.text-white Do you want to know more? We’d love to hear from you!
+        h5.font-weight-500.text-white Write us a message using the form below.
+
+.contact-form
+  script charset="utf-8" src="https://js.hsforms.net/forms/v2.js"
+  javascript:
+    hbspt.forms.create({ portalId: "6699636", formId: "e2c16fdb-b699-4e9a-9b53-9902d95f8f90" });
+
+
+/ - if flash.any?
+/   section.contact.bg-primary
+/     .container
+/       - flash.each do |name, msg|
+/         .row
+/           .col-lg-10.mx-auto.text-center
+/             h1.section-heading.text-white = msg
+/
+/ = form_for(:message, url: send_us_a_message_path, html: { method: :post }) do
+/   .contact-form
+/     input#first-name type="text" placeholder="First name" name="message[first_name]"
+/     input#last-name type="text" placeholder="Last name" name="message[last_name]"
+/     input#email type="text" placeholder="Email address" name="message[from_email]"
+/     input#company type="text" placeholder="Company or University" name="message[org_name]"
+/     input#phone type="text" placeholder="Phone Number" name="message[phone]"
+/     input#subject type="text" placeholder="Message subject" name="message[subject]"
+/     textarea#message type="text" placeholder="Your message" name="message[message]"
+/     input#submit-event type="submit" value="Send message"

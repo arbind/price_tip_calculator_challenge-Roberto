@@ -1,0 +1,35 @@
+@import "../themes/creative/variables.scss";
+
+.opportunities.show {
+  header.masthead {
+    &.hero_apple.apple_pay{
+      background-image: asset-url('website/opportunities/apple/apple_pay_hero.png');
+    }
+    &.hero_guayaki.yerba_mate {
+      background-image: asset-data-url("website/hero/image-hero.jpg");
+    }
+    &.hero_youtube_originals.wayne {
+      background-image: asset-data-url("website/hero/image-hero.jpg");
+    }
+    &.hero_5_hour_energy.apply {
+      background-image: asset-data-url("website/hero/image-hero.jpg");
+    } 
+    &.hero_redbull.wings_team {
+      background-image: asset-data-url("website/opportunities/redbull/wings_team_hero.jpg");
+    }
+  }
+  header .instruction a{
+    color: fade-out($white, .3);
+  }
+}
+
+#about {
+  .more_info {
+    a {
+      color: white;
+      &:hover, &:active {
+        color: darken($primary, 15%);
+      }
+    }
+  }
+}

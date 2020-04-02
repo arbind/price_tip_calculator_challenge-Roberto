@@ -1,0 +1,8 @@
+en:
+  errors: 
+    event_horizon?: 'Invalid event horizon'
+    event_state?: 'Invalid event state'
+    event_origin?: 'Invalid event origin'
+    event_potential?: 'Invalid event potential'
+    sym?: 'Value must be a Symbol'
+    array_sym?: 'Value must be an Array of Symbols'

@@ -1,0 +1,11 @@
+- if flash.any?
+  #flash.container
+    - flash.each do |name, msg|
+      - if !flash.notice
+        = content_tag :div, class: "alert alert-#{name} alert-dismissable", role: "alert" do
+          button.close type="button" data-dismiss="alert"
+            span aria-hidden="true"
+              | &times;
+            span.sr-only
+              | Close
+          = msg

@@ -1,0 +1,24 @@
+@import "../themes/creative/variables.scss";
+@import "./utils";
+
+body.choose_registeration, body.choose_sign_in {
+  background-color: $background-color;
+  .card {
+    a {
+      color: #323a45;
+    }
+    .card.choose-market-type {
+      padding: 18px;
+      min-width: 160px;
+      &:hover {
+        border-color: $orange;
+        @include shadow;
+      }
+    }
+    .card-footer {
+      a:hover {
+        color: $primary
+      }
+    }
+  }
+}

@@ -1,0 +1,197 @@
+section#logo-row {
+  text-align: center;
+  overflow: hidden;
+  background-color: #f9fafb;
+  @media screen and (min-width: 769px) {
+    .home-logos-slider-item {
+      padding: 1rem;
+      width: calc((100%) / 6);
+      float: left;
+      height: 120px;
+    }
+    &:after {
+      content: ' ';
+      clear: both;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .home-logos-slider-item {
+      height: 120px;
+      padding: 1rem;
+    }
+  }
+}
+
+section#featured-events {
+  overflow-x: hidden;
+  h2 {
+    font-size: 2.5rem;
+  }
+  .featured-events-slider {
+    .featured-events-item {
+      padding: 1rem;
+    }
+  }
+  .testimonial-slider {
+    .testimonial-item {
+      padding: 1rem;
+    }
+  }
+  .event {
+    padding: 0px;
+    border-radius: 4px;
+    .event-image {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      height: 230px;
+      .event-image-cover {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(20,185,214,0.8);
+        color: #fff;
+        font-weight: bold;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+      }
+      &:hover {
+        .event-image-cover {
+          opacity: 1;
+        }
+      }
+      .event-type{
+        background-color: #1fbba6;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 3px;
+        line-height: 0.75em;
+        text-transform: uppercase;
+        padding: 0.5rem;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+      }
+      img{
+        width: 100%;
+      }
+    }
+    .event-description {
+      width: 100%;
+      .event-name{
+        color: #323a45;
+        font-size: 20px;
+        font-weight: 400;
+        margin: 10px 24px 0px;
+        width: calc(100% - 48px);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .event-details{
+        font-size: 12px;
+        color: #5f6e81;
+        overflow: hidden;
+        width: calc(100% - 48px);
+        text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        margin: 0px 24px 12px;
+        font-weight: 300;
+        span.bullet {
+          padding: 0px 5px;
+          max-width: 2%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-size: 0.3rem;
+          position: relative;
+          bottom: 0.1rem;
+        }
+        span.university-name{
+          max-width: 50%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        span.event-attendance{
+          max-width: 84%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+      .event-reviews{
+        margin: 12px 24px 0px;
+        i {
+          width: 13.6px;
+          height: 13px;
+          object-fit: contain;
+          color: #eceff4;
+          margin-right: 5.2px;
+          &.highlighted {
+            color: #f8e71c;
+          }
+          &.half {
+            color: #f8e71c;
+          }
+        }
+        .review-count {
+          height: 12px;
+          line-height: 18px;
+          font-size: 10px;
+          font-weight: 600;
+          margin-left: 8px;
+          color: #5f6e81;
+        }
+      }
+    }
+  }
+}
+
+section.how-we-help {
+  .step-icon {
+    height: 177px;
+    margin-bottom: 36px;
+  }
+  .how-we-help-step h3 {
+    font-size: 2rem;
+  }
+}
+
+section#search-for-events {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+section#stats {
+  .stat-number{
+    height: 70px;
+    font-size: 58px;
+    font-weight: bold;
+    color: #f27935;
+    margin: 30px 10px 20px 10px;
+  }
+  .stat-description{
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    color: #323a45;
+  }
+}
+
+section#reviews {
+  overflow-x: hidden;
+  background-image: asset-url('website/logo/logo-recess-lg-bg.png');
+  background-size: 50% auto;
+  background-position: 0px 40px;
+  background-repeat: no-repeat;
+  h2 {
+    font-size: 2.5rem;
+  }
+  .test-img-container {
+    width: 160px;
+    height: 160px;
+  }
+}

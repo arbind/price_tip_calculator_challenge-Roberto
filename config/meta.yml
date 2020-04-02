@@ -1,0 +1,5 @@
+meta_product_name: "RECESS"
+meta_title: "RECESS - Discover & Book Event Sponsorships"
+meta_description: "RECESS is the easiest way to sponsor live events. We help brands and agencies discover, contract, pay and advance with thousands of event organizers."
+meta_image: "logo.png" # should exist in `app/assets/images/`
+twitter_account: "@RECESS"   # required for Twitter Cards

@@ -1,0 +1,26 @@
+- return if @hide_footer
+footer.page-footer.font-small
+  .container
+    .row  
+      .col-md-4.text-center.text-md-left
+        .mt-5
+          a.navbar-brand.js-scroll-trigger.footer-link href="/"
+            .logo-recess =image_tag 'website/logo/logo.png', height: 20
+      .col-md-4.text-center
+        .mt-5
+          nobr
+            =link_to "Terms", tos_path, class: "footer-link mx-3"
+          nobr
+            =link_to "Privacy", privacy_path, class: "footer-link mx-3"
+
+      .col-md-4.text-center.text-md-right
+        .mt-5
+          =link_to facebook_page_url_helper, target: "_blank" do
+            =image_tag "website/facebook/icon-facebook@3x.png", height: 32, class: "footer-link mx-3"
+
+          =link_to instagram_page_url_helper, target: "_blank" do
+            =image_tag "website/instagram/icon-instagram@3x.jpg", height: 32, class: "footer-link ml-3"
+
+  .footer-copyright.text-center.py-3.mb-3
+    | © 2019: 
+    a.text-dark href="https://www.recess.is" Recess Digital, Inc.

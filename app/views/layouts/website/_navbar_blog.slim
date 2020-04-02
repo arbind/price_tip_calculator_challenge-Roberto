@@ -1,0 +1,17 @@
+nav#mainNav.blog.navbar.navbar-expand-lg.navbar-light.fixed-top
+  .container
+    a.navbar-brand.js-scroll-trigger href="/blog"
+      span
+        .logo-recess
+        span.blog-title Blog
+
+    button.navbar-toggler.navbar-toggler-right aria-controls="navbarResponsive" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarResponsive" data-toggle="collapse" type="button" 
+      span.navbar-toggler-icon
+    #navbarResponsive.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto
+        li.nav-item
+          a.nav-link href="/" Sponsor Events
+        li.nav-item
+          a.nav-link href=for_events_path List An Event
+        li.nav-item
+          a.nav-link.btn.btn-primary href="https://#{FQDN_APP}/register"  Sign up

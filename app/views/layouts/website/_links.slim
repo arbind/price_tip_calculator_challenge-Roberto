@@ -1,0 +1,11 @@
+- return if true.eql? @hide_navbar_links
+button.navbar-toggler.navbar-toggler-right aria-controls="navbarResponsive" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarResponsive" data-toggle="collapse" type="button" 
+  span.navbar-toggler-icon
+#navbarResponsive.collapse.navbar-collapse
+  ul.navbar-nav.ml-auto
+    - if true.eql? @is_supply_page
+      li.nav-item
+        a.nav-link href="/" Sponsor Events
+    - else
+      li.nav-item
+        a.nav-link href=for_events_path List An Event

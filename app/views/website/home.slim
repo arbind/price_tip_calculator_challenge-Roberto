@@ -1,0 +1,290 @@
+- content_for :title
+  | Home - RECESS | Discover & Book Event Sponsorships
+
+- content_for :desc
+  | RECESS is the easiest way to sponsor live events. We help brands and agencies discover, contract, pay and advance with thousands of event organizers.
+  
+header.hero-image.home.masthead.text-center.text-white.d-flex
+  .container.my-auto
+    .row
+      .col-lg-12.mx-auto
+        h1.pb-3 The easiest way to sponsor college events
+      .col-lg-12.mx-auto
+        h2.mb-5.font-weight-500 Discover, book and coordinate with thousands of college event organizers, all in one place
+
+        a.btn.btn-primary.btn-xl.js-scroll-trigger href="https://#{FQDN_APP}/register"  Get Started
+
+section#logo-row.mt-0.pt-0.pb-0
+  .row
+    .container.mx-auto.py-2.py-md-4
+      .home-logos-slider
+        .home-logos-slider-item.d-flex.content-justify-center.align-items-center
+          =image_tag "website/recess_website_logos/brands/square.png", class: "img-fluid"
+        .home-logos-slider-item.d-flex.content-justify-center.align-items-center
+          =image_tag "website/recess_website_logos/brands/withoutbox/logo_google@2x.png", class: "img-fluid"
+        .home-logos-slider-item.d-flex.content-justify-center.align-items-center
+          =image_tag "website/recess_website_logos/brands/withoutbox/logo_mtv@2x.png", class: "img-fluid"
+        .home-logos-slider-item.d-flex.content-justify-center.align-items-center
+          =image_tag "website/recess_website_logos/brands/withoutbox/logo_lyft@2x.png", class: "img-fluid"
+        .home-logos-slider-item.d-flex.content-justify-center.align-items-center
+          =image_tag "website/recess_website_logos/brands/withoutbox/logo_essentia@2x.png", class: "img-fluid"
+        .home-logos-slider-item.d-flex.content-justify-center.align-items-center
+          =image_tag "website/recess_website_logos/brands/withoutbox/logo_brewdr@2x.png", class: "img-fluid"
+
+section#featured-events
+  .container
+    .row
+      .col-lg-12.text-center
+        h2.section-heading Featured Events
+  .container
+    .featured-events-slider.mt-3
+      .featured-events-item
+        .card.shadow.mx-auto
+          .card-body.event
+            .event-image.d-flex.justify-content-center.align-items-center
+              .event-type Involvement Fair
+              =image_tag "website/trending_events/UNC-FallFest.jpg"
+            .event-description
+              .event-name Fall Fest
+              .event-details
+                span.university-name University of North Carolina at Chapel Hill
+                span.bullet &#9679;
+                span.event-attendance
+                  span.attendance-count 24,000
+                  span.attendance-wording &nbsp; attending
+
+      .featured-events-item
+        .card.shadow.mx-auto
+          .card-body.event
+            .event-image.d-flex.justify-content-center.align-items-center
+              .event-type Dance Marathon
+              =image_tag "website/trending_events/NYU-DanceMarathon.jpg"
+            .event-description
+              .event-name New York Dance Marathon
+              .event-details
+                span.university-name New York University
+                span.bullet &#9679;
+                span.event-attendance
+                  span.attendance-count 1,500
+                  span.attendance-wording &nbsp; attending
+
+      .featured-events-item
+        .card.shadow.mx-auto
+          .card-body.event
+            .event-image.d-flex.justify-content-center.align-items-center
+              .event-type Concert
+              =image_tag "website/trending_events/NYU-WelcomeWeekBall.jpg"
+            .event-description
+              .event-name NYU Welcome Week Ball
+              .event-details
+                span.university-name New York University
+                span.bullet &#9679;
+                span.event-attendance
+                  span.attendance-count 4,500
+                  span.attendance-wording &nbsp; attending
+
+      .featured-events-item
+        .card.shadow.mx-auto
+          .card-body.event
+            .event-image.d-flex.justify-content-center.align-items-center
+              .event-type Concert
+              =image_tag "website/trending_events/UM-HomecomingConcert.jpg"
+            .event-description
+              .event-name UMN Homecoming Concert
+              .event-details
+                span.university-name University of Minnesota-Twin Cities
+                span.bullet &#9679;
+                span.event-attendance
+                  span.attendance-count 6,000
+                  span.attendance-wording &nbsp; attending
+
+      .featured-events-item
+        .card.shadow.mx-auto
+          .card-body.event
+            .event-image.d-flex.justify-content-center.align-items-center
+              .event-type Involvement Fair
+              =image_tag "website/trending_events/UK-UnionFest.jpg"
+            .event-description
+              .event-name UnionFest
+              .event-details
+                span.university-name University of Kansas
+                span.bullet &#9679;
+                span.event-attendance
+                  span.attendance-count 8,000
+                  span.attendance-wording &nbsp; attending
+
+      .featured-events-item
+        .card.shadow.mx-auto
+          .card-body.event
+            .event-image.d-flex.justify-content-center.align-items-center
+              .event-type Concert / Music Festival
+              =image_tag "website/trending_events/UCSD-Hullabaloo.jpg"
+            .event-description
+              .event-name Hullabaloo
+              .event-details
+                span.university-name University of California-San Diego
+                span.bullet &#9679;
+                span.event-attendance
+                  span.attendance-count 6,000
+                  span.attendance-wording &nbsp; attending
+
+      .featured-events-item
+        .card.shadow.mx-auto
+          .card-body.event
+            .event-image.d-flex.justify-content-center.align-items-center
+              .event-type Pep Rally / School Spirit
+              =image_tag "website/trending_events/UA-Convocation.jpg"
+            .event-description
+              .event-name Convocation
+              .event-details
+                span.university-name University of Alabama
+                span.bullet &#9679;
+                span.event-attendance
+                  span.attendance-count 5,000
+                  span.attendance-wording &nbsp; attending
+
+      .featured-events-item
+        .card.shadow.mx-auto
+          .card-body.event
+            .event-image.d-flex.justify-content-center.align-items-center
+              .event-type Movie / Film Screening
+              =image_tag "website/trending_events/UCN-Summer-Movie-Fest.jpg"
+            .event-description
+              .event-name Summer Movie Fest
+              .event-details
+                span.university-name University of California-Northridge
+                span.bullet &#9679;
+                span.event-attendance
+                  span.attendance-count 2,000
+                  span.attendance-wording &nbsp; attending
+
+      .featured-events-item
+        .card.shadow.mx-auto
+          .card-body.event
+            .event-image.d-flex.justify-content-center.align-items-center
+              .event-type Concert / Music Festival
+              =image_tag "website/trending_events/WUSL-WalkinLayDown.jpg"
+            .event-description
+              .event-name Walk in Lay Down
+              .event-details
+                span.university-name Washington University in St Louis
+                span.bullet &#9679;
+                span.event-attendance
+                  span.attendance-count 5,000
+                  span.attendance-wording &nbsp; attending
+
+section#all-in-one.how-we-help.pt-1
+  .container
+    .row
+      .col-sm-7.shape-pattern-container
+        .shape-pattern-square
+        .step-img.d-flex.justify-content-center.align-items-center = image_tag "website/full_service/all-in-one.png", width: 500, class: "mx-auto img-fluid"
+      .col-sm-5.d-flex.align-items-center
+        .how-we-help-step
+          h3.pt-3.pt-sm-0 All-In-One Solution
+          p Discover and book event sponsorships through our online platform. Say goodbye to endless searches and phone tag.
+
+section#smart-targeting.how-we-help.pt-1
+  .container
+    .row
+      .col-sm-5.d-flex.align-items-center.order-2.order-sm-1
+        .how-we-help-step
+          h3.pt-3.pt-sm-0 Smart Targeting
+          p Reach the right people. Standardized sponsorship inventory make it a snap to filter and compare events and opportunities.
+      .col-sm-7.shape-pattern-container.order-1.order-sm-2
+        .shape-pattern-circle
+        .step-img.d-flex.justify-content-center.align-items-center = image_tag "website/full_service/smart-targeting.png", width: 500, class: "mx-auto img-fluid"
+
+section#easy-contracts.how-we-help.pt-1
+  .container
+    .row
+      .col-sm-7
+        .step-img.d-flex.justify-content-center.align-items-center = image_tag "website/full_service/easy-contracts-payments.png", width: 500, class: "mx-auto img-fluid"
+      .col-sm-5.d-flex.align-items-center
+        .how-we-help-step
+          h3.pt-3.pt-sm-0 Easy Contracts + Payments
+          p Save hours of back-and-forth with event organizers. Our centralized contracting, payment and logistics tools make it easy.
+
+section#search-for-events.bg-secondary
+  .container
+    .row
+      .col-lg-9.text-center
+        h2.section-heading.text-white.mt-4.mb-4  Answer a few simple questions, get a personalized list of curated events.
+      .col-lg-3.mx-auto.text-center
+        =link_to schedule_demo_path(anchor: :search) do
+          button#search-events.btn.btn-inverse.btn-xl.mt-4.mb-4 Get Started
+
+section#stats
+  .container
+    .row
+      .col-md-4.text-center
+        .stat-number 1,000+
+        .stat-description Events
+      .col-md-4.text-center
+        .stat-number 6M+
+        .stat-description Audience Reach
+      .col-md-4.text-center
+        .stat-number 100+
+        .stat-description Brand Sponsors
+
+.divider
+
+section#reviews
+  .container
+    .row
+      .col-lg-10.mx-auto.text-center
+        h2.section-heading What people are saying
+  .container
+    .testimonial-slider
+      .testimonial-item.text-center
+        .card.mt-5.mx-auto.bg-transparent.border-0
+          .card-body
+            .test-img-container.mx-auto.d-flex.align-items-center.justify-content-center
+              =image_tag "website/utz/Utz-Logo.png", width: 160
+            h5.mb-3 “Recess took the work off my shoulders. I saved time by getting everything done all at once using their one-stop service.”
+            p
+              i.mb-0 - Carrie Berger, (Utz, Brand Manager)
+            p
+              strong @utzsnacks
+      .testimonial-item.text-center
+        .card.mt-5.mx-auto.bg-transparent.border-0
+          .card-body
+            .test-img-container.mx-auto.d-flex.align-items-center.justify-content-center
+              =image_tag "website/tea_of_a_kind/teaofakind-logo.jpg", width: 160
+            h5.mb-3 “Recess made event search and location determination easy.”
+            p
+              i.mb-0 - Karin Gerlach, (Tea of A Kind, Vice President of Marketing)
+            p
+              strong @teaofakind
+      .testimonial-item.text-center
+        .card.mt-5.mx-auto.bg-transparent.border-0
+          .card-body
+            .test-img-container.mx-auto.d-flex.align-items-center.justify-content-center
+              =image_tag "website/lifeaid/lifeaid-logo.png", width: 160
+            h5.mb-3 “It’s always hard to find the contact who is managing the events on-campus…I wouldn’t be able to just find the events by googling it. Recess knowing the events that are happening, really helps.”
+            p
+              i.mb-0 - Ana Lamanna, (Lifeaid, National Field Marketing Manager)
+            p
+              strong @lifeaidbevco
+      .testimonial-item.text-center
+        .card.mt-5.mx-auto.bg-transparent.border-0
+          .card-body
+            .test-img-container.mx-auto.d-flex.align-items-center.justify-content-center
+              =image_tag "website/lyft/logo-lyft-pink@3x.jpg", width: 160
+            h5.mb-3 “Sponsoring 20+ events via a single platform made booking and logistics easy and saved us a ton of time.”
+            p
+              i.mb-0 - Chris Kaltreider, (Lyft, Operations Specialist)
+            p
+              strong @lyft
+
+      .testimonial-item.text-center
+        .card.mt-5.mx-auto.bg-transparent.border-0
+          .card-body
+            .test-img-container.mx-auto.d-flex.align-items-center.justify-content-center
+              =image_tag "website/alienware/logo@3x.png", width: 160
+            h5.mb-3 “We have continued to use the Recess platform because it’s so easy for us to select, compare and find the right events”
+            p
+              i.mb-0 - Daniel Eisman, (Program Director, Alienware Live)
+            p
+              strong @alienware
+.divider

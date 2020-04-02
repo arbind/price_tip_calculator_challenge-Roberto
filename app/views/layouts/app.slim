@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title Recess
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    meta name="keywords" content="awesomeness"
+    meta name="author" content='me'
+    = javascript_pack_tag 'app_vue'
+  body
+    h1 Layout For Vue
+    == yield

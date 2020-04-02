@@ -1,0 +1,60 @@
+doctype html
+html
+  head
+    - if content_for :title
+      title= yield :title
+    - else
+      title= meta_title
+
+    - if content_for :desc
+      meta(name="description" content="#{yield :desc}")
+    - else
+      meta name="description" content= meta_description
+    / meta content= meta_description name="description"
+
+    - if content_for :meta
+      = yield :meta
+
+    meta charset="utf-8"
+
+    meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    meta name="google-site-verification" content="ZxqBwTiHK9noVisAaSuXBAeBc2Dz0A05mHUlDbbpEFo"
+
+    <!-- Facebook Open Graph data -->
+    meta property="og:title" content= meta_title
+    meta property="og:type" content="website"
+    meta property="og:url" content= request.original_url
+    meta property="og:image" content= meta_image
+    meta property="og:description" content= meta_description
+    meta property="og:site_name" content= meta_title
+
+    <!-- Twitter Card data -->
+    meta name="twitter:card" content="summary_large_image"
+    meta name="twitter:site" content= DEFAULT_META["twitter_account"]
+    meta name="twitter:title" content= meta_title
+    meta name="twitter:description" content= meta_description
+    meta name="twitter:creator" content= DEFAULT_META["twitter_account"]
+    meta name="twitter:image:src" content= meta_image
+
+    = csrf_meta_tags
+    = favicon_link_tag
+    = favicon_link_tag 'apple-touch-icon.png', rel: 'apple-touch-icon', type: 'image/png'
+    = favicon_link_tag 'android-chrome.png', rel: 'android-chrome', type: 'image/png'
+
+    = stylesheet_link_tag 'website.css', media: 'all'
+    link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" rel="stylesheet"
+
+    = javascript_include_tag 'website.js'
+    - if SERVER_CONTEXT.eql?("live")
+      script#hs-script-loader[type="text/javascript" async defer src="//js.hs-scripts.com/6699636.js"]
+
+    - if content_for :script
+      = yield :script
+
+
+  body#page-top class="#{controller.controller_name} #{controller.action_name}"
+    = render 'layouts/website/navbar'
+    .content-canvas
+        = yield
+    = render 'layouts/website/footer'
+    = javascript_include_tag 'website-theme.js'

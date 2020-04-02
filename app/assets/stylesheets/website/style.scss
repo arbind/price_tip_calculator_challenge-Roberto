@@ -1,0 +1,98 @@
+@import "../themes/creative/variables.scss";
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body {
+  color: $text-color;
+}
+
+header.masthead {
+  padding: 7rem 0;
+}
+.content-canvas {
+  min-height: calc(100% - 150px);
+}
+
+a:hover, a:active {
+  text-decoration: none;
+  color: darken($primary, 15%);
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.btn {
+  border-radius: 8px;
+  &.btn-link {
+    text-decoration: none;
+    &:hover, &:active {
+      text-decoration: none;
+    }
+  }
+}
+
+.btn-inverse {
+  color: $primary;
+  background-color: #ffffff;
+}
+
+.divider{
+  max-width: 1110px;
+  width: calc(100% - 40px);
+  margin: auto;
+  height: 1px;
+  object-fit: contain;
+  background-color: #eceff4;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+section {
+  padding: 5rem 0;
+}
+
+#related_opportunities {
+  background-color: #fefefe;
+}
+
+.shape-pattern-container {
+  position: relative;
+  overflow: hidden;
+  .shape-pattern-circle {
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    background-image: asset-url('website/icons/shapePattern_circle.png');
+  }
+  .shape-pattern-square {
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-image: asset-url('website/icons/shapePattern_square.png');
+  }
+  .step-img {
+    z-index: 1;
+    position: relative;
+  }
+}

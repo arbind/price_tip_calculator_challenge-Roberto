@@ -1,0 +1,4 @@
+#!/bin/bash
+cd vue
+./node_modules/.bin/vue-cli-service build
+cd ..

@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Recess
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    meta name="keywords" content="awesomeness"
+    meta name="author" content='me'
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    meta name="google-site-verification" content="ZxqBwTiHK9noVisAaSuXBAeBc2Dz0A05mHUlDbbpEFo"
+
+    = stylesheet_link_tag "application", media: "all"
+    = javascript_include_tag "application"
+  body
+    h1 Layout For Website
+    #header
+      = render 'layouts/flash'
+      = render 'layouts/notice'
+    == yield

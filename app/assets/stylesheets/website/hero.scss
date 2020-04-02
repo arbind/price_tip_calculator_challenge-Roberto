@@ -1,0 +1,29 @@
+.hero-image {
+  &.home {
+    background-image: asset-url('website/hero/brewdr-hero.png');
+    h1 {
+      font-size: 42px;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 22px;
+    }
+  }
+  &.event {
+    background-image: asset-url('website/hero/image-hero@3x.jpg');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    h1 {
+      font-size: 42px;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 22px;
+    }
+  }
+  &.contact {
+    background-image: asset-url('website/hero/map@3x.jpg');
+  }
+
+}

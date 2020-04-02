@@ -1,0 +1,136 @@
+@import "../themes/creative/variables.scss";
+@import "../themes/creative/mixins";
+@import "./utils";
+
+body.blog{
+  #blog-posts, #blog-post {
+    padding-bottom: 2rem;
+  }
+  padding-top: 8rem;
+  color: $text-color;
+  background-color: $background-color;
+  .category-toggle{
+    color: $text-color;
+    .indicator{
+      transform: rotate(-180deg);
+      @include transition-all;
+    }
+    &.collapsed {
+      .indicator{
+        transform: rotate(0deg);
+      }
+    }
+  }
+  .category-name {
+    display: block;
+    width: 100%;
+    color: $orange;
+    background-color: white;
+    line-height: 4rem;
+    position: relative;
+    .square {
+      background-color: $orange;
+      position: absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      width:5rem;
+    }
+    .tag {
+      padding-left: 6rem;
+    }
+  }
+  #category-selector{
+    a {
+      h1, h2, h3, h4, h5 {
+        line-height: 4rem;
+      }
+      &:hover {
+        @include shadow;
+        .square {
+            background-color: darken($orange,15%);
+        }
+        .tag {
+            color: darken($orange,15%);
+        }
+      }
+    }
+  }
+  h1 {
+    margin: 1.5rem 0 2rem 0;
+  }
+  header {
+    margin-bottom: 2rem;
+    img{
+      width: 100%;
+    }
+  }
+  .publish-date{
+    font-weight: 300;
+    font-size: 12px;
+  }
+  img {
+    max-width: 100%;
+  }
+  .category {
+    a.tag {
+      color: $orange;
+      margin-right: 0.3rem;
+      &:hover, &:active {
+        color: darken($orange, 15%);
+      }
+    }
+  }
+
+  .card.blog-post-summary {
+    a {
+      color: $text-color;
+      &:hover, &:active {
+        color: $text-color;
+      }
+    }
+    .category {
+      a.tag {
+        color: $orange;
+        &:hover, &:active {
+          color: darken($orange, 15%);
+        }
+      }
+    }
+    border-color: transparent;
+    background-color: white;
+    &:hover {
+      border-color: $orange;
+      @include shadow;
+    }
+    &.primary {
+      img {
+        width: 100%;
+        min-height: 400px;
+      }
+    }
+    .card-body {
+      padding: 0px;
+      border-radius: 4px;
+      .image {
+        width: 100%;
+        overflow: hidden;
+        img{
+          width: 100%;
+        }
+      }
+      .overview {
+        padding: 20px;
+        width: 100%;
+        .title {
+          margin: 10px 0;
+        }
+        .summary{
+        }
+        .publish-date{
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}

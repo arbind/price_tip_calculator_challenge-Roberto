@@ -1,0 +1,41 @@
+- content_for :title
+  | Sign Up - RECESS
+
+- content_for :desc
+  | Register for RECESS as a brand advertiser or event organizer.
+
+.container-fluid
+  section 
+    .row
+      .col.col-sm-12.col-md-8.col-lg-5.mx-auto
+        .card.mt-5
+          .card-body.text-center
+            h1.card-title Sign Up
+            h6.mt-4 Select if you're a brand advertiser or an event organizer.
+            p.card-text.mt-5
+              .row
+                .col.col-8.col-md-6.mx-auto.mb-3
+                  =link_to schedule_demo_path(anchor: :search)
+                    .card.choose-market-type
+                      .card-body.text-center
+                        img.py2.mt1 src="https://cdn.zeplin.io/5b3c036d0c4cabf82d84dc4a/assets/087F4250-36BA-41B9-8181-09A8F1EF2F40.png" width="60" /
+                      .text-center
+                        h6
+                          | I am an
+                          br
+                          | Advertiser
+                .col.col-8.col-md-6.mx-auto.mb-3
+                  =link_to "https://#{FQDN_APP}/register"
+                    .card.choose-market-type
+                      .card-body.text-center
+                        img.py2.mt1 src="https://cdn.zeplin.io/5b3c036d0c4cabf82d84dc4a/assets/BC1DC624-90D1-4DDE-9F75-A005676D6B5E.png" width="42" /
+                      .text-center
+                        h6
+                          | I am a University
+                          br
+                          | Event Organizer
+
+          .text-center.mb-5
+            | Already have an account? &nbsp;&nbsp;
+            =link_to "Log In", "https://#{FQDN_APP}/login", class: "text-primary"
+            |.
