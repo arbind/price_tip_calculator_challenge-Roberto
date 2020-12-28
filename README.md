@@ -33,7 +33,7 @@ Add a 3rd page to the website that provides a dynamic price calculator. Update t
 
 ### 2 Run the specs
 ```
-rspec
+bundle exec rspec
 open coverage/index.html
 ```
 
