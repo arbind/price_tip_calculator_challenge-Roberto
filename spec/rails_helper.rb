@@ -1,25 +1,27 @@
+# frozen_string_literal: true
+
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV['RAILS_ENV'] = 'test'
 ENV['RACK_ENV'] = 'test'
-require File.expand_path('../../config/environment', __FILE__)
+require File.expand_path('../config/environment', __dir__)
 # Prevent database truncation if the environment is production
-abort("The Rails environment is running in production mode!") if Rails.env.production?
+abort('The Rails environment is running in production mode!') if Rails.env.production?
 
 require 'rspec/rails'
-Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
+Dir[Rails.root.join('spec/support/**/*.rb')].sort.each { |f| require f}
 # require 'aasm/rspec'
 require 'factory_bot_rails'
-require "selenium/webdriver"
+require 'selenium/webdriver'
 
 Capybara.server_port = 3000
-Capybara.app_host = "http://127.0.0.1:8080"
+Capybara.app_host = 'http://127.0.0.1:8080'
 
 Capybara.register_driver :chrome do |app|
   Capybara::Selenium::Driver.new(app, browser: :chrome)
 end
 
 Capybara.register_driver :headless_chrome do |app|
-  capabilities = Selenium::WebDriver::Remote::Capabilities.chrome chromeOptions: { args: %w(headless disable-gpu) }
+  capabilities = Selenium::WebDriver::Remote::Capabilities.chrome chromeOptions: { args: %w[headless disable-gpu] }
   Capybara::Selenium::Driver.new app, browser: :chrome, desired_capabilities: capabilities
 end
 Capybara.javascript_driver = :headless_chrome
@@ -44,7 +46,6 @@ Capybara.javascript_driver = :headless_chrome
 # Dir[Rails.root.join('spec', 'support', '**', '*.rb')].each { |f| require f }
 
 RSpec.configure do |config|
-
   config.include FactoryBot::Syntax::Methods
 
   config.before(:each) do

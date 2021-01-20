@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.configure do
   # Verifies that versions and hashed value of the package contents in the project's package.json
   # config.webpacker.check_yarn_integrity = false
@@ -53,7 +55,7 @@ Rails.application.configure do
   config.log_level = :debug
 
   # Prepend all log lines with the following tags.
-  config.log_tags = [ :request_id ]
+  config.log_tags = [:request_id]
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
@@ -83,15 +85,15 @@ Rails.application.configure do
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
   # Force SSL
-  config.force_ssl = ENV["FORCE_SSL"].to_s.squish.downcase.eql? "true"
+  config.force_ssl = ENV['FORCE_SSL'].to_s.squish.downcase.eql? 'true'
 
   # Leverage browser caching & set expires headers
   config.public_file_server.headers = {
     'Cache-Control' => "public, s-maxage=#{365.days.to_i}, maxage=#{180.days.to_i}",
-    'Expires' => "#{1.year.from_now.to_formatted_s(:rfc822)}"
+    'Expires' => 1.year.from_now.to_formatted_s(:rfc822).to_s
   }
 
-  if ENV["RAILS_LOG_TO_STDOUT"].present?
+  if ENV['RAILS_LOG_TO_STDOUT'].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)

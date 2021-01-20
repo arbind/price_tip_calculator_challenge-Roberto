@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe ShoppingCart do
   let(:subject) { create :shopping_cart}
 

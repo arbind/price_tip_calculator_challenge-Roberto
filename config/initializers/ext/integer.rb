@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 class Integer
   def to_boolean
-    not self.zero?
+    !zero?
   end
-  alias_method :to_bool, :to_boolean
+  alias to_bool to_boolean
 
   def to_key
     self
@@ -10,9 +12,9 @@ class Integer
 
   def yesno
     if to_boolean
-      "Yes"
+      'Yes'
     else
-      "No"
+      'No'
     end
   end
 end
