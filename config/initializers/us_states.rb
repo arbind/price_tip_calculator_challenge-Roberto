@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 US_STATE_NAME_ABBREVIATION_MAP = {
   alaska: :AK,
   alabama: :AL,
@@ -56,28 +54,28 @@ US_STATE_NAME_ABBREVIATION_MAP = {
   wisconsin: :WI,
   west_virginia: :WV,
   wyoming: :WY
-}.freeze
+}
 
 UC_CITY_NAME_LOOKUP_MAP = {
-  ny: 'New York',
-  nyc: 'New York',
-  new_york_city: 'New York',
-  la: 'Los Angeles',
-  cincy: 'Cincinnati',
-  kc: 'Kansas City',
-  vegas: 'Las Vegas',
-  no: 'New Orleans',
-  nawlins: 'New Orleans',
-  oc: 'Orange County',
-  the_oc: 'Orange County',
-  obx: 'Outer Banks',
-  philly: 'Philadelphia',
-  sf: 'San Francisco',
-  frisco: 'San Francisco',
-  san_fran: 'San Francisco',
-  dc: 'Washington',
-  washington_dc: 'Washington'
-}.freeze
+  ny: "New York",
+  nyc: "New York",
+  new_york_city: "New York",
+  la: "Los Angeles",
+  cincy: "Cincinnati",
+  kc: "Kansas City",
+  vegas: "Las Vegas",
+  no: "New Orleans",
+  nawlins: "New Orleans",
+  oc: "Orange County",
+  the_oc: "Orange County",
+  obx: "Outer Banks",
+  philly: "Philadelphia",
+  sf: "San Francisco",
+  frisco: "San Francisco",
+  san_fran: "San Francisco",
+  dc: "Washington",
+  washington_dc: "Washington"
+}
 
 def STATE_FOR long_state_name
   key = long_state_name.to_s.parameterize.underscore.to_sym
@@ -93,5 +91,5 @@ end
 
 def DMA_FOR dma
   # +++ lookup zipcodes, counties, geocoordinates, etc
-  dma.to_s.upcase.gsub(/\s*,\s*/, '-').squish
+  dma.to_s.upcase.gsub(/\s*,\s*/ , "-").squish
 end

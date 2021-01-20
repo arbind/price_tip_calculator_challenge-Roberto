@@ -1,6 +1,5 @@
-# frozen_string_literal: true
-
 class ContactUsMailer < ApplicationMailer
+
   def send_message params, recipients='jack@recess.is, deuce@recess.is, product@recess.is'
     subject = "#{params[:subject]} - WEB CONTACT US"
     @from_email = params[:from_email]
@@ -11,4 +10,5 @@ class ContactUsMailer < ApplicationMailer
     @body = params[:message]
     mail(to: recipients, subject: subject)
   end
+
 end

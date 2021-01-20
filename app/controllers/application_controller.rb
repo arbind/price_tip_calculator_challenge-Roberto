@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class ApplicationController < ActionController::Base
   force_ssl if: :require_ssl?
 
@@ -9,19 +7,20 @@ class ApplicationController < ActionController::Base
     render text: :pong
   end
 
-  protected
+protected
 
-  def log_exception(exception)
+  def log_exception exception
     puts exception # +++
   end
 
-  private
+private
 
   def require_ssl?
-    ENV['FORCE_SSL'].to_s.to_bool
+    ENV["FORCE_SSL"].to_s.to_bool
   end
 
   def debug
     puts('DEBUG FUNCTION:, ', controller_name, action_name, self.class.name)
   end
+
 end
