@@ -1,0 +1,35 @@
+header.hero-image.home.masthead.text-center.text-white.d-flex
+  .container.my-auto
+    .row
+      .col-lg-12.mx-auto
+        h1.pb-3 Pricing
+      .col-lg-12.mx-auto
+        h2.mb-5.font-weight-500 Get an estiamte price based on your needs
+div#pricing-calc
+  table.center
+    = render partial: "items_header"
+    - @items.each_with_index do |item, index|
+      tr
+        td
+          = item[:type]
+        td
+          = item[:hours]
+        td
+          = item[:reach]
+        td
+          = "$#{item[:price].to_f}"
+        td
+          = button_to :remove, website_price_tip_path(params[:id]), method: :delete, params: {index: index}
+    tr
+     td colspan="5"
+    tr
+     td
+       b Total
+     td
+     td
+     td
+       b $#{@items.map {|item| item[:price]}.sum}
+    tr
+     td colspan="5"
+       b &nbsp;
+    = render partial: "item_form", locals: {url: website_price_tip_path(params[:id]), method: "patch"}

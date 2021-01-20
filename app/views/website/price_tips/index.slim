@@ -1,0 +1,14 @@
+header.hero-image.home.masthead.text-center.text-white.d-flex
+  .container.my-auto
+    .row
+      .col-lg-12.mx-auto
+        h1.pb-3 Pricing
+      .col-lg-12.mx-auto
+        h2.mb-5.font-weight-500 Get an estiamte price based on your needs
+div#pricing-calc
+  table.center
+    = render partial: "items_header"
+    = render partial: "item_form", locals: {url: website_price_tips_path, method: "post"}
+
+
+

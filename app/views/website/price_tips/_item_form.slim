@@ -1,0 +1,11 @@
+= form_with url: url, method: method do |form|
+  tr
+    td
+      = form.select :type, @spaces
+    td
+      = form.text_field :hours
+    td
+      = form.text_field :reach
+    td
+    td
+      = form.submit :add
